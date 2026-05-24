@@ -1,107 +1,127 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lokesh Ratusaria — thatsAI</title>
-    <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #0a0a0a;
-        color: #e8e8e8;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 640px;
-        text-align: center;
-      }
-      .photo {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #2a2a2a;
-        margin: 0 auto 1.5rem;
-        display: block;
-      }
-      h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;  
-        background: linear-gradient(90deg, #fff, #a855f7);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .role {
-        color: #a855f7;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-      }
-      .bio {
-        color: #b8b8b8;
-        font-size: 1.05rem;
-        margin-bottom: 2rem;
-      }
-      .tagline {
-        font-size: 1.25rem;
-        color: #fff;
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #222;
-      }
-      .pulse { 
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: #a855f7;
-        border-radius: 50%;
-        margin-right: 8px;
-        animation: pulse 1.5s ease-in-out infinite;
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.5; transform: scale(1.3); }
-      }
-      .links {
-        margin-top: 2rem;
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-      }
-      .links a {
-        color: #888;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.2s;
-      }
-      .links a:hover { color: #a855f7; }
-    </style>
-  </head>
-  <body>    
-    <div class="container">
-      <img src="photo.png" alt="Lokesh Ratusaria" class="photo" />
-      <h1>Lokesh Ratusaria</h1>
-      <p class="role">Senior Backend Engineer</p>
-      <p class="bio">
-        I build large-scale distributed systems — real-time analytics on Kafka + Pinot,
-        backend services, and now diving deep into agentic AI.
-      </p>
-      <div class="tagline">
-        <span class="pulse"></span>
-        Cool AI projects coming soon.
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="thatsAI builds automation systems, AI-assisted workflows, and custom software tools for growing businesses." />
+  <title>thatsAI | Automation and Software Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="thatsAI home">
+      <span class="brand-mark">tA</span>
+      <span>thatsAI</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-cta" href="contact.html">Start a Project</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Automation, AI workflows, and custom software</p>
+        <h1>Practical software systems that make business operations faster.</h1>
+        <p class="hero-text">
+          thatsAI helps teams replace repetitive manual work with reliable tools,
+          backend systems, dashboards, and AI-assisted workflows built around how
+          the business actually runs.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="contact.html">Discuss Your Workflow</a>
+          <a class="button secondary" href="about.html">Meet the Builder</a>
+        </div>
       </div>
-      <div class="links">
-        <a href="mailto:lokeshr@thatsai.in">Email</a>
-        <a href="https://github.com/Lokesh97" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/lokesh-r-373656133/" target="_blank">LinkedIn</a>
+
+      <div class="hero-visual" aria-label="Professional portrait of Lokesh Ratusaria">
+        <img src="photo.png" alt="Lokesh Ratusaria" />
+        <div class="signal-panel">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Founder-led delivery</strong>
+            <span>Senior backend engineering experience, applied to business automation.</span>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="section band">
+      <div class="section-heading">
+        <p class="eyebrow">What we build</p>
+        <h2>Automation that fits your business, not the other way around.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-number">01</span>
+          <h3>Workflow Automation</h3>
+          <p>Turn repeated operational steps into dependable systems across approvals, reporting, data entry, alerts, and internal handoffs.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <h3>Custom Business Tools</h3>
+          <p>Build internal apps, admin panels, dashboards, and integration layers that are designed around your team&apos;s day-to-day work.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <h3>AI-Assisted Operations</h3>
+          <p>Use AI agents and language models where they are useful: document processing, customer support triage, knowledge search, and decision support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">How projects run</p>
+        <h2>Clear discovery, focused delivery, measurable outcomes.</h2>
+      </div>
+      <div class="process-list">
+        <article>
+          <span>1</span>
+          <div>
+            <h3>Map the workflow</h3>
+            <p>We identify where time, errors, delays, or context switching are costing the business.</p>
+          </div>
+        </article>
+        <article>
+          <span>2</span>
+          <div>
+            <h3>Design the system</h3>
+            <p>We define the right tool, integration, automation, or AI workflow before writing code.</p>
+          </div>
+        </article>
+        <article>
+          <span>3</span>
+          <div>
+            <h3>Ship and improve</h3>
+            <p>We launch useful software quickly, then refine it based on real usage and business value.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div>
+        <p class="eyebrow">Ready to modernize a workflow?</p>
+        <h2>Bring the messy process. We will turn it into software.</h2>
+      </div>
+      <a class="button primary light" href="contact.html">Contact thatsAI</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 thatsAI. Built for practical business automation.</span>
+    <div>
+      <a href="mailto:support@thatsai.in">support@thatsai.in</a>
+      <a href="https://github.com/Lokesh97" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/lokesh-r-373656133/" target="_blank" rel="noreferrer">LinkedIn</a>
     </div>
-  </body>   
-  </html>
+  </footer>
+</body>
+</html>
